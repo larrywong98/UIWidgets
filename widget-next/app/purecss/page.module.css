@@ -1,0 +1,76 @@
+.base {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.balls-frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 300px;
+  border: 1px solid black;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.balls {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+}
+.balls::before {
+  position: absolute;
+  top: -5px;
+  left: 0;
+  content: "";
+  width: 200px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+.ball {
+  position: relative;
+  top: 80px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  transform-origin: 50% -100px;
+}
+.ball::before {
+  position: absolute;
+  top: -80px;
+  left: 50%;
+  content: "";
+  width: 1px;
+  height: 80px;
+  background-color: #ffffff;
+}
+.ball-1 {
+  animation: first-ball 0.8s ease-out infinite alternate;
+}
+.ball-5 {
+  animation: five-ball 0.8s ease-out 0.8s infinite alternate;
+}
+@keyframes first-ball {
+  0%,
+  50% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(30deg);
+  }
+}
+@keyframes five-ball {
+  0%,
+  50% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-30deg);
+  }
+}
