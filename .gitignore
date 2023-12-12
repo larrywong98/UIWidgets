@@ -2,3 +2,4 @@
 /widget-next/.next
 
 /widget-vite/node_modules
+/server/node_modules
