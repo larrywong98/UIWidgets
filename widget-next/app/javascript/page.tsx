@@ -127,10 +127,10 @@ const Page = () => {
     return "fetch result in console";
   };
   const func10 = () => {
-    type Obj1Type = {
+    interface Obj1Type {
       value?: number;
       age?: number;
-    };
+    }
     const obj1: Obj1Type = {};
     obj1["value"] = 1;
     obj1.age = 20;

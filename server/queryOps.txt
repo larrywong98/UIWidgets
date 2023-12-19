@@ -1,0 +1,29 @@
+query Author($authorId: ID!) {
+    authors{
+      id,name, reviews {
+        id,rating
+      }
+    }
+    author(id: $authorId) {
+      id,name
+     
+    }
+}
+  
+mutation DeleteMutation($id:ID!){
+    deleteGame(id: $id) {
+      id,title,platform
+    }
+}
+  
+mutation AddMutation($game:AddGameInput!){
+  addGame(game:$game){
+    id,title,platform
+  }
+}
+
+mutation EditMutation($id:ID!,$edits:EditGameInput!){
+  updateGame(id: $id, edits: $edits) {
+    id,title,platform
+  }
+}
