@@ -26,6 +26,33 @@ const Page = () => {
         </div>
         <div className={styles["grid-3-sub"]}>b</div>
         <div className={styles["grid-3-sub"]}>c</div>
+        <div className={styles["grid-3-sub"]}>d</div>
+      </div>
+      <div className={styles["grid-4"]}>
+        <div className={styles["grid-4-sub"] + " " + styles["grid-4-firstone"]}>
+          a
+        </div>
+        <div className={styles["grid-4-sub"]}>b</div>
+        <div className={styles["grid-4-sub"]}>c</div>
+        <div className={styles["grid-4-sub"]}>d</div>
+        <div className={styles["grid-4-sub"]}>e</div>
+        <div className={styles["grid-4-sub"]}>f</div>
+        <div className={styles["grid-4-sub"] + " " + styles["grid-4-lastone"]}>
+          g
+        </div>
+      </div>
+      <div className={styles["grid-4"]}>
+        <div className={styles["grid-4-sub"] + " " + styles["grid-4-firstone"]}>
+          a
+        </div>
+        <div className={styles["grid-4-sub"]}>b</div>
+        <div className={styles["grid-4-sub"]}>c</div>
+        <div className={styles["grid-4-sub"]}>d</div>
+        <div className={styles["grid-4-sub"]}>e</div>
+        <div className={styles["grid-4-sub"]}>f</div>
+        <div className={styles["grid-4-sub"] + " " + styles["grid-4-lastone"]}>
+          g
+        </div>
       </div>
     </div>
   );
